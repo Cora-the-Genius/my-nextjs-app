@@ -1,0 +1,2 @@
+navbar不应该fixed，否则展开状态下会遮挡内容
+text input选中时边缘过于生硬

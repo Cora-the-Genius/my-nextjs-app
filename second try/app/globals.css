@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+  }
+
+main {
+    @apply flex items-center justify-center h-screen;
+}
+
+nav {
+    @apply fixed left-0 top-0 h-screen bg-gray-50 p-4 text-gray-700 shadow-md text-2xl py-5;
+}
+
+ul {
+    @apply flex flex-col space-y-4 justify-center;
+}
+
+span {
+    @apply ml-2 text-base font-medium;
+}
+
+span:hover {
+    @apply text-blue-500;
+}
+
+.textInput input {
+    @apply w-80 p-2 border border-gray-300 rounded-md;
+}
+
+.textInput button {
+    @apply ml-2 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600
+}

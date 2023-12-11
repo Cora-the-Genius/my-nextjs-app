@@ -1,0 +1,60 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; 
+}
+
+.vertical-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px; /* Initial width to accommodate icons */
+  height: 100vh;
+  background-color: #f2f2f2;
+  transition: width 0.5s ease-in-out;
+  overflow-x: hidden; /* Hides text when not hovered */
+}
+
+.vertical-nav:hover {
+  width: 200px; /* Width to accommodate text labels */
+}
+
+.vertical-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-nav li {
+  margin-bottom: 10px;
+  white-space: nowrap; /* Ensure the text doesn't wrap */
+}
+
+.vertical-nav a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.vertical-nav a:hover {
+  color: #007bff;
+}
+
+.vertical-nav img {
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+/* Hide text labels initially */
+.vertical-nav a span {
+  display: none;
+  margin-left: 10px;
+}
+
+/* Show text labels on hover */
+.vertical-nav:hover a span {
+  display: inline;
+}
